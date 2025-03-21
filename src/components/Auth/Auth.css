@@ -1,0 +1,63 @@
+.logo {
+    padding-top: 30px;
+    margin-bottom: 10px;
+    font-family: "Oleo Script", serif;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.change-side{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.6);
+}
+.forgot-password-container {
+    position: relative;
+}
+.forgot-password {
+    margin-top: 5px;
+    text-align: right;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.4);
+    background: inherit;
+    border: none;
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+}
+.forgot-password:hover {
+    color: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+    text-decoration: underline;
+}
+.link {
+    cursor: pointer;
+    font-size: 14px;
+    background-color: inherit;
+    border: none;
+    color: rgba(255, 255, 255, 0.6);
+    padding: 5px;
+    border-radius: 5px;
+}
+.link:hover {
+    cursor: pointer;
+    color: rgba(255, 255, 255, 1);
+    background: rgba(0, 0, 0, 0.1);
+}
+.change-side {
+    font-size: 14px;
+}
+.next {
+    transition: margin 0.5s ease;
+    margin-left: 5px;
+}
+.animate-next {
+    margin-left: 20px;
+}

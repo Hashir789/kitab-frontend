@@ -1,10 +1,10 @@
-import "../Auth.css";
+import "../../Auth.css";
 import { FC } from "react";
 import { FormikProps } from "formik";
-import Button from "../../Button/Button";
 import "react-toastify/dist/ReactToastify.css";
-import Separator from "../../Separator/Separator";
-import InputField from "../../Input/InputField/InputField";
+import Button from "../../../../components/Button/Button";
+import Separator from "../../../../components/Separator/Separator";
+import InputField from "../../../../components/Input/InputField/InputField";
 
 interface SignupProps {
   form: FormikProps<{ password: string; confirmPassword: string; }>;

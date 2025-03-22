@@ -1,21 +1,21 @@
-import "../Auth.css";
-import { FC } from "react";
+import "../../Auth.css";
+import { FC, useState } from "react";
 import { FormikProps } from "formik";
-import Button from "../../Button/Button";
 import "react-toastify/dist/ReactToastify.css";
-import Separator from "../../Separator/Separator";
-import InputField from "../../Input/InputField/InputField";
+import Button from "../../../../components/Button/Button";
+import Separator from "../../../../components/Separator/Separator";
+import InputField from "../../../../components/Input/InputField/InputField";
 
 interface SignupProps {
   form: FormikProps<{ fullname: string; email: string; }>;
   handleChangeWithDebounce: (form: FormikProps<{ fullname: string; email: string; }>) => (e: React.ChangeEvent<HTMLInputElement>) => void;
-  next: boolean;
-  setNext: React.Dispatch<React.SetStateAction<boolean>>;
   showToast: () => Promise<boolean>;
 }
 
-const Signup1: FC<SignupProps> = ({ form, handleChangeWithDebounce, next, setNext, showToast }) => {
+const Signup1: FC<SignupProps> = ({ form, handleChangeWithDebounce, showToast }) => {
   
+  const [next, setNext] = useState(false);
+
   return (
     <>
       <h1 className="logo">Kitaab</h1>

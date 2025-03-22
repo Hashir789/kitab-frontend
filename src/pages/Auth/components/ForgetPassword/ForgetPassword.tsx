@@ -1,9 +1,10 @@
-import "../Auth.css";
+import "../../Auth.css";
 import { FC } from "react";
 
 interface ForgetPasswordProps {
-    setChangeSectionLogin: React.Dispatch<React.SetStateAction<boolean>>;
+  setChangeSectionLogin: React.Dispatch<React.SetStateAction<boolean>>;
 }
+
 const ForgetPassword: FC<ForgetPasswordProps> = ({ setChangeSectionLogin }) => {
   
   return (

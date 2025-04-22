@@ -41,14 +41,20 @@
 }
 .flip-card-container-content {
     display: flex;
-    width: 200%;
+    width: 400%;
     height: 100%;
     transition: transform 0.5s ease-in-out;
     transform: translateX(0%);
 }
-.flip-card-container-content.change-flip-card-section {
-    transform: translateX(-50%);
+.flip-card-container-content.change-flip-card-section1 {
+    transform: translateX(calc(-100% / 4));
+}
+.flip-card-container-content.change-flip-card-section2 {
+    transform: translateX(calc(2 * (-100% / 4)));
+}
+.flip-card-container-content.change-flip-card-section3 {
+    transform: translateX(calc(3 * (-100% / 4)));
 }
 .flip-card-section {
-    width: 50%;
+    width: calc(100% / 4);
 }

@@ -12,7 +12,7 @@ const Placeholder: FC = () => {
 
   return (
     <>
-      <Button onClick={handleClick}>Back</Button>
+      <Button onClick={handleClick} mx>Back</Button>
     </>
   );
 };

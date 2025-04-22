@@ -18,6 +18,15 @@
     font-size: 18px;
     color: rgba(255, 255, 255, 0.6);
 }
+.mt-30 {
+    margin-top: 30px;
+}
+.mt-15 {
+    margin-top: 15px;
+}
+.mt-20 {
+    margin-top: 20px;
+}
 .forgot-password-container {
     position: relative;
 }
@@ -37,7 +46,7 @@
     cursor: pointer;
     text-decoration: underline;
 }
-.link {
+.link, .resend {
     cursor: pointer;
     font-size: 14px;
     background-color: inherit;
@@ -46,7 +55,7 @@
     padding: 5px;
     border-radius: 5px;
 }
-.link:hover {
+.link:hover, .resend:hover {
     cursor: pointer;
     color: rgba(255, 255, 255, 1);
     background: rgba(0, 0, 0, 0.1);
@@ -54,10 +63,57 @@
 .change-side {
     font-size: 14px;
 }
-.next {
-    transition: margin 0.5s ease;
-    margin-left: 5px;
+.forget-password-icon-container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-top: 10px;
 }
-.animate-next {
-    margin-left: 20px;
+.forget-password-envelope-wrapper {
+    position: relative;
+}
+.forget-password-envelope-icon {
+    color: rgba(255, 255, 255, 0.6);
+}
+.forget-password-lock-wrapper {
+    width: 30px;
+    height: 30px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(50%, 0%);
+}
+.forget-password-lock-icon {
+    color: rgba(255, 255, 255, 0.6);
+}
+.forget-your-password-text {
+    text-align: center;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6);
+    height: 70px;
+    overflow: hidden;
+    padding: 15px;
+}
+.password-recovery-text {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6); 
+    text-align: center;
+    margin: 18px;
+}
+.font-600 {
+    font-weight: 600;
+}
+.m-20 {
+    margin: 20px;
+}
+.loading-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 65%;
 }

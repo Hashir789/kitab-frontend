@@ -9,7 +9,7 @@ interface FlipCardProps {
 
 interface FlipCardSideProps {
   children: ReactNode;
-  changeSection: boolean;
+  changeSection: number;
 }
 
 const FlipCard: FC<FlipCardProps> = ({ children, width = '100vw', maxWidth = '400px' }) => {
@@ -33,10 +33,23 @@ const FlipCard: FC<FlipCardProps> = ({ children, width = '100vw', maxWidth = '40
 };
 
 const FlipCardFrontSide: FC<FlipCardSideProps> = ({ children, changeSection }) => {
+  const getFlipClass = () => {
+    switch (changeSection) {
+      case 1:
+        return 'change-flip-card-section1';
+      case 2:
+        return 'change-flip-card-section2';
+      case 3:
+        return 'change-flip-card-section3';
+      default:
+        return '';
+    }
+  };
+
   return (
     <div className="flip-card-front">
       <div className="flip-card-container">
-        <div className={`flip-card-container-content ${changeSection ? 'change-flip-card-section': ''}`}>
+        <div className={`flip-card-container-content ${ getFlipClass() }`}>
           { children }
         </div>
       </div>
@@ -48,7 +61,7 @@ const FlipCardBackSide: FC<FlipCardSideProps> = ({ children, changeSection }) =>
   return (
     <div className="flip-card-back">
       <div className="flip-card-container">
-        <div className={`flip-card-container-content ${changeSection ? 'change-flip-card-section': ''}`}>
+        <div className={`flip-card-container-content ${`flip-card-container-content ${ changeSection === 1 ? 'change-flip-card-section1': changeSection === 2 ? 'change-flip-card-section2': ''}`}`}>
           { children }
         </div>
       </div>

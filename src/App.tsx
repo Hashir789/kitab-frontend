@@ -1,3 +1,4 @@
+import './App.css';
 import Auth from "./pages/Auth/Auth";
 import "react-toastify/dist/ReactToastify.css";
 import { Routes, Route } from "react-router-dom";

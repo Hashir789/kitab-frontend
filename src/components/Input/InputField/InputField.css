@@ -46,6 +46,12 @@
 .icon-color {
     color: #ffffff99;
 }
+.xmark-color {
+    color: #f44336;
+}
+.check-color {
+    color: #369936;
+}
 .pointer {
     cursor: pointer;
 }
@@ -87,4 +93,22 @@ input[type="text"]::placeholder, input[type="password"]::placeholder {
 }
 .error-logo{
     margin-right: 10px;
+}
+.loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+}
+.loader {
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(0, 0, 0, 0.1);
+    border-top-color: rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+    animation: spin 1s ease-in-out infinite;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }

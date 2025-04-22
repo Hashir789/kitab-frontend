@@ -1,0 +1,30 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.input1 {
+    all: unset !important;
+    appearance: none !important;
+    height: 75px !important;
+    width: 50px !important;
+    font-size: 25px !important;
+    text-align: center !important;
+    border-radius: 8px !important;
+    background: rgba(0, 0, 0, 0.2) !important;
+    margin: 5px !important;
+    color: rgba(255, 255, 255, 0.6) !important;
+}
+.input1:hover {
+    outline: 2px solid rgba(255, 255, 255, 0.1) !important;
+}
+.input1:focus {
+    outline: 2px solid rgba(255, 255, 255, 0.3) !important;
+}
+.resend-div {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6);
+    text-align: center; 
+    margin: 20px;
+}
